@@ -1,1 +1,1 @@
-# less and js files created by rucsi6
+# less and js files created by Krisztian Petrucsik
