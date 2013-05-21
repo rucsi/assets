@@ -1,0 +1,405 @@
+#searchResults {
+    .boxed();
+	
+    h3.box-header {
+        a {
+            display: block;
+            cursor: pointer;
+            position: relative;
+        }
+
+        .text {
+            padding-left: 30px;
+        }
+
+        .icon-large {
+            position: absolute;
+            top: 2px;
+            left: 5px;
+        }
+    }
+
+    #openRestaurants {
+		border-bottom: 1px solid fade(@c-light, 50%);
+    }
+
+    #currentDeals {
+		border-bottom: 1px solid fade(@c-light, 50%);
+        h3 {
+            .border-radius(0);
+        }
+		hr:last-of-type {
+			display: none;
+		}
+    }
+
+    #areaMap {
+        h3 {
+            .border-radius-top(0);
+            .border-radius-bottom(5px);
+			
+			&.in {
+				.border-radius-bottom(0);
+			}
+        }
+    }
+
+    & > section, & > div {
+        padding: 0px;
+    }
+
+    /*.vendors > article {
+        position: relative;
+        padding: 10px;
+        border-bottom: 1px solid @c-lightgrey;
+
+        .restaurantDetails {
+            .transition();
+            height: 0px;
+            min-height: 0px;
+            max-height: 1px;
+            overflow: hidden;
+            position: relative;
+            clear: both;
+
+            .tab {
+                margin-top: 10px;
+            }
+        }
+
+        &:hover {
+            .restaurantDetails {
+                min-height: 200px;
+                max-height: 400px;
+                height: auto;
+            }
+        }
+    }
+
+    .logo {
+        color: #A08A76;
+        float: left;
+        font-size: 12px;
+		height: 100px;
+		line-height: 100px;
+        margin-right: 20px;
+        text-align: center;
+		width: 100px;
+		img {
+			max-width: 100px;
+			max-height: 100px;
+		}
+    }
+
+    .info {
+        margin-left: 90px;
+    }
+
+    .restaurantInfo {
+		h3 a{ 
+			.colorLink(@c-red);
+		}
+        input {
+            float: left;
+            width: 0px;
+            visibility: hidden;
+        }
+    }*/
+
+    .accordion {
+        margin-bottom: 0px;
+
+        &:nth-child(2) > label h3, &:nth-child(3) > label h3 {
+            .border-radius(0);
+        }
+
+        &:nth-child(3) > label h3 {
+            .border-radius-bottom(5px);
+        }
+
+        &:nth-child(3) > input:checked {
+            & + label h3 {
+                .border-radius-bottom(0);
+            }
+
+            & ~ section {
+                .border-radius-bottom(10px);
+            }
+        }
+    }
+}
+
+.vendors{
+	.vendor_info {		
+		margin: 0 auto;
+		padding: 5px 0;
+		position: relative;
+		width: 96%;
+		.v-img {
+			img{
+				/*.border-radius-top();*/
+				width: 100%
+			}			
+			height: 100px;
+			line-height: 100px;
+			overflow: hidden;
+			/*margin-top: 10px;*/
+			text-align: center;
+			border-color: @c-lightgrey;
+			border-width: 1px 1px 0 1px;
+			border-style: solid;
+			.border-radius-top();
+		}
+		.v-logo {
+			.border-radius(32px);
+			box-shadow: 0 0 0 2px @c-light, 0 0 0 3px @c-lightgrey;
+			background: #fff;
+			height: 64px;
+			line-height: 64px;
+			text-align: center;
+			overflow: hidden;
+			position: absolute;
+			width: 64px;
+			top: -16px;
+			left: 5px;
+			img {
+				.border-radius(32px);
+				height: 100%;
+				vertical-align: top;
+				width: 100%;
+
+			}
+		}
+		.v-info{
+			position: relative;
+			height: 64px;
+			border-color: @c-lightgrey;
+			border-width: 0 1px;
+			border-style: solid;
+			background: @c-light;
+		}
+		.v-detail {
+			color: @c-darkgrey;
+			margin-left: 79px;
+			padding-top: 5px;
+			
+			h3 {
+				font-size: 18px;
+				line-height: 20px;
+				margin: 0 0 0 5px;
+			
+				a {
+					color: @c-darkgrey;
+					&:hover{
+						color: @c-darkred;
+					}
+				}
+			}
+		}
+	}
+	.dish_list .dish {
+		height: 285px;
+	}
+	.dish_list li
+    {
+		.dish {
+			 margin-left: 5px;
+             margin-right: 5px;
+		}
+        &:nth-child(3n+1)
+        {
+            .dish
+            {
+                margin-left: 20px;
+                margin-right: -10px;
+            }
+        }
+
+        &:nth-child(3n)
+        {
+            .dish
+            {
+                margin-left: -10px;
+                margin-right: 20px;
+            }
+        }
+    }
+	.vendor_details {
+		width: 100%;
+		background: @c-light;
+		td {
+			font-size: 14px;
+			font-weight: bold;
+			line-height: 14px;
+			/*float: left;*/
+			text-align: center;
+			height: 60px;
+			border: 1px solid @c-lightgrey;
+			&.r {
+				border-right: 0;
+				width: 59px;
+			}
+			&.c {
+				border: 1px solid @c-lightgrey;
+			}
+			&.d{
+				border-left: 0;
+				width: 59px;
+			}
+		}
+		.rating i.star:before {
+			padding-right: 2px;
+		}
+	}
+	.vendor_links {
+		.clearfix();
+		border: 1px solid @c-lightgrey;
+		border-top: 0;
+		background: @c-light;
+		.border-radius-bottom();
+		
+		.m, .i {
+			float: left;
+			height: 45px;
+			text-align: center;
+			width: 50%;
+			h3 {
+				margin: 0;
+			}
+		}
+		.i {
+				border-right: 1px solid @c-lightgrey;
+				color: @c-green;
+				cursor: pointer;
+				margin-right: -1px;
+			}
+		.m {
+			color: @c-red;
+			.inf {
+				font-size: 10px;
+				color: @c-grey;
+				margin-top: -15px;
+			}
+			.t {
+				color: @c-orange;
+			}
+		}
+	}
+	.rho {
+		/*display: inline-block;
+		margin: -5px 0 -15px 15px;*/
+		background: url(/assets/images/btn/btn_offers.png);
+		height: 48px;
+		position: absolute;
+		right: 5px;
+		top: 15px;
+		width: 48px;		
+	} 
+	.ratings {
+        span {
+            display: inline-block;
+        }
+    }
+}
+.popover.popout {
+    width: auto;
+	max-width: none;
+    .close {
+        margin: 1px 3px 0 0;
+    }
+
+    .vi-content {
+        margin: 0 25px 0 20px;
+        padding: 10px 0;
+		/*address{
+			float: left;
+			margin-right: 20px;
+		}*/
+    }
+
+    &.in {
+        display: block;
+    }
+
+    .tab-content {
+        min-height: 130px;
+        max-height: 330px;
+        height: auto;
+        margin-right: 30px;
+        margin-bottom: 20px;
+    }
+}
+.leaflet-popup-content {
+	article {
+		.clearfix();
+		h4 {
+			display: block;
+			margin-left: 37px;
+			white-space: nowrap;
+			width: 100%;
+		}
+		img {			
+			height: 32px; 
+			position: absolute;
+			top: 10px;
+			width: 32px;
+		}
+		.btn-menu-small{
+			margin-top: -32px;
+		}
+	}
+}
+.dish_list {
+    .tab-deal {
+        .dish {
+            height: 150px;
+			.dish-img  {
+				height: 150px;
+				line-height: 150px;
+				img {
+					max-height: 130px;
+					max-width: 100%;
+				}
+			}
+            .deal_text {
+                p {
+                    display: block;
+                    font-size: 14px;
+                    width: auto;
+                }
+            }
+        }
+		.deal_title h4{
+			font-size: 17.5px;
+			line-height: 20px;
+		}
+    }
+}
+.btn-menu {
+    width: 90px;
+    height: 90px;
+    cursor: pointer;
+    display: block;
+    float: right;
+    background: url(/assets/images/btn/btn_menu.png) no-repeat -90px 0;
+    font-size: 0px;
+	&:hover {
+		background-position: 0 0;
+	}
+}
+.btn-menu-small {
+	width: 45px;
+    height: 45px;
+    cursor: pointer;
+    display: block;
+    float: right;
+    background: url(/assets/images/btn/btn_menu.png) no-repeat -45px -90px;
+    font-size: 0px;
+	&:hover {
+		background-position: 0 -90px;
+	}
+}
+.img-addr {
+    float: left;
+    margin-right: 20px;
+}

@@ -1,0 +1,38 @@
+ .ribbon {
+        background: @c-red;
+        background-image: -moz-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+        background-image: -webkit-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+        background-image: -o-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+        background-image: -ms-linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+        background-image:  linear-gradient(rgba(255,255,255,.3), rgba(255,255,255,0));
+        box-shadow: 0 2px 0 rgba(0,0,0,.3);
+		-moz-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+        -webkit-box-shadow: 0 2px 0 rgba(0,0,0,.3);
+		margin: 0 -30px 30px -30px;
+		padding: 3px 0;
+		position: relative;
+		text-align: center;
+		
+		&:before, &:after
+		{
+			border-color: transparent;
+			border-style: solid;
+			bottom: -10px;
+			content: "";
+			position: absolute;
+		}
+    
+		&:before
+		{
+			border-right-color: @c-darkred;
+			border-width: 0 10px 10px 0;
+			left: 0;
+		}
+    
+		&:after
+		{
+			border-left-color: @c-darkred;
+			border-width: 0 0 10px 10px;
+			right: 0;
+		}
+}

@@ -1,0 +1,129 @@
+.btn:not(.btn-navbar)
+{
+    color: darken(@c-darkred, 10%);
+    font-weight: bold;
+    position: relative;
+    text-shadow: 0px 1px 1px fade(#fff, 80%), 0px -1px 0px fade(#000, 80%);
+    -webkit-background-clip: border-box;
+    -moz-background-clip: border-box;
+    background-clip: border-box;
+
+    &:hover, &.active, &:active
+    {
+        text-shadow: 2px 2px 0px fade(@c-dark, 20%);		
+		/*filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;*/
+    }
+
+    &:focus
+    {
+        outline: none;
+        color: darken(@c-darkred, 10%);
+    }
+
+    .icon-large
+    {
+        margin-top: 4px;
+    }
+
+    &.disabled, &:disabled, &[disabled='disabled']
+    {        
+        .gradient-linear(@c-lightgrey, @c-darkgrey);
+
+        &:after
+        {
+            background-position: -52px 0;
+        }
+    }
+
+
+    &:after
+    {
+        content: "";
+        background: url(/assets/images/btn/btn_ears.png) no-repeat 0 0;
+        display: block;
+        width: 26px;
+        height: 30px;
+        top: -30px;
+        right: 0px;
+        position: absolute;
+    }
+}
+
+.btn-prime, .btn-sec, .btn-alt
+{
+    float: right;
+}
+/*.btn-group-vertical .btn{
+    width: 100%;
+}*/
+.btn.btn-prime, .btn-group-prime .btn
+{
+    .gradient-image(@c-red, @c-darkred);
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+
+    &:after
+    {
+        background-position: -52px -30px;
+    }
+
+    &:hover, &:focus, &.active, &:active
+    {
+        background-color: @c-darkred;
+        color: @c-yellow;
+        &:after
+        {
+            background-position: 0px -30px;
+        }
+    }
+}
+
+.btn.btn-sec, .btn-group-sec .btn
+{
+    .gradient-image(@c-yellow, @c-orange);
+
+    &:after
+    {
+        background-position: -26px 0px;
+    }
+
+    &:hover, &:focus, &.active, &:active
+    {
+        background-color: @c-orange;
+        color: @c-darkred;
+        &:after
+        {
+            background-position: -26px -30px;
+        }
+    }
+}
+
+.btn.btn-alt, .btn-group-alt .btn {
+    .gradient-image(@c-lightgreen, @c-darkgreen);
+
+    &:after {
+        background-position: 0 -60px;
+    }
+
+    &:hover, &:focus, &.active, &:active {
+        background-color: @c-darkgreen;
+        color: @c-light;
+
+        &:after {
+            background-position: -26px -60px;
+        }
+    }	
+}
+
+.btn-group .btn
+{
+    &:after
+    {
+        display: none;
+    }
+
+   &:active, &.active
+    {
+	    background: @c-darkred;
+        color: @c-yellow;
+    }
+}

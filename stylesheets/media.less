@@ -1,0 +1,63 @@
+@media (max-width: 979px) {
+    body {
+        padding-top: 0;
+    }
+	header .navbar .navbar-inner  {
+		float: none;
+		margin: 0;
+	}
+	.pagecontent {
+		padding-top: 0;
+	}
+	.page{
+		margin-top: 0px;
+	}
+    .dish_list {
+		.dish {
+			.dish-img {
+				height: 160px;
+				line-height: 160px;
+			}
+		}
+        li {
+            .dish {
+                margin-left: 5px;
+                margin-right: 5px;
+            }
+
+            &:nth-child(3n+1) {
+                .dish {
+                    margin-left: 10px;
+                    margin-right: 0px;
+                }
+            }
+
+            &:nth-child(3n) {
+                .dish {
+                    margin-left: 0px;
+                    margin-right: 10px;
+                }
+            }
+        }
+    }
+    footer
+    {
+		&.fixed {
+			position: relative;
+			height: auto;
+			max-height: none;
+		}
+
+        .footer-inner
+        {
+            height: auto;
+        }
+    }
+}
+
+@media (min-width: 980px) {
+    .modal-large {
+        width: 960px;
+        margin-left: -480px;
+    }
+}

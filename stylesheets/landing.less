@@ -1,0 +1,138 @@
+body.landing {
+    #bg {
+        position: fixed;
+        top: 50%;
+        left: 50%;
+        width: 1024px;
+        height: 768px;
+        background: url(/assets/images/landing.png);
+        margin-top: -384px;
+        margin-left: -512px;
+
+        .countdown{
+            position: absolute;
+            top: 50%;
+            margin-top: -162px;
+            color: #fff;
+
+            h4{
+                  margin-left: 50px;
+              }
+            #countdown{
+                  margin-left: 70px;
+                  margin-top: 20px;
+              }
+            .status{
+                position: absolute;
+                height: 314px;
+                top: 5px;
+                left: 15px;
+                width: 20px;
+                .progress{
+                    position: relative;
+                    height: 100%;
+                    .bar
+                    {
+                        position: absolute;
+                        .gradient-image (@c-yellow,@c-orange);
+                        box-shadow: 0 -1px 2px fade(@c-lightgrey, 75%) inset;
+                    }
+                    &.vertical{
+                        .bar{
+                            .transition(height 2s ease-in-out);
+                            width: 100%;
+                            height: 0;
+                            }
+                        &.bottom {
+                            .bar {
+                                bottom: 0;
+                            }
+                       }
+                    }
+                }
+                .tooltip{
+                    /*.tooltip-inner{
+                        background-color:  @c-lightgrey;
+                    }
+                    .tooltip-arrow{
+                        border-left-color:  @c-orange;
+                    }*/
+                    .transition(bottom 2s ease-in-out);
+                    bottom: 0;
+                    right: 20px;
+                    position: absolute;
+                    margin-bottom: -18px;
+                    h5{
+                          margin: 0;
+                          color: @c-yellow;
+                      }
+                }
+            }
+        }
+        .enquire{
+            position: absolute;
+            top: 50%;
+            margin-top: 187px;
+            left: 90px;
+            color: @c-red;
+        }
+        a {
+            text-indent: -9999px;
+            display: inline-block;
+            overflow: hidden;
+            text-decoration: none;
+            padding: 0;
+            position: absolute;
+            bottom: 286px;
+            height: 35px;
+            line-height: 35px;
+            width: 129px;
+
+            &.customers {
+                left: 91px;
+
+                &:hover {
+                    background-image: url(/assets/images/cust.png);
+                }
+            }
+
+            &.restaurants {
+                left: 235px;
+
+                &:hover {
+                    background-image: url(/assets/images/rest.png);
+                }
+            }
+
+            &.social {
+                height: 30px;
+                bottom: 89px;
+
+                &.facebook {
+                    width: 72px;
+                    right: 237px;
+                }
+
+                &.twitter {
+                    width: 72px;
+                    right: 137px;
+                }
+            }
+        }
+    }
+
+    h3.modal-header {
+		background: @c-red;
+		.border-radius-top(5px);
+		color: @c-light;
+
+        margin-top: 0;
+        margin-bottom: 0;
+        padding: 0 10px;
+		
+        text-shadow: 0 1px 1px fade(@c-darkred, 80%);
+    }
+    textarea{
+        resize: none;
+    }
+}

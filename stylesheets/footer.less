@@ -1,0 +1,188 @@
+footer
+{
+	.border-radius-top(250px 25px);
+	.border-radius-bottom(0);
+	border: 0;
+	bottom: 0;
+    left: 0;
+    margin-top: -270px;
+    overflow: hidden;
+	padding: 0;
+	right: 0;
+    z-index: 1030;
+	
+	.footer-inner {
+		.gradient-linear(@c-red, @c-darkred);
+		height: 270px;
+	}
+    &.fixed
+    {
+        position: fixed;
+        .transition();
+        height: 40px;
+		margin-bottom: 0;
+        min-height: 40px;
+        max-height: 40px;
+        overflow: hidden;
+		margin-top: 10px;
+		.footer-inner {
+			height: auto;
+		}
+        &:hover
+        {
+            height: auto;
+            min-height: 40px;
+            max-height: 400px;
+        }
+    }
+
+    .copy
+    {
+        text-align: right;
+        margin: 15px 10px 0 0;
+        padding: 10px 10px 0 10px;
+        color: @c-orange;
+        text-shadow: 2px 2px 3px fade(@c-yellow, 50%);
+    }
+
+    h4
+    {
+        color: @c-grey;
+        text-shadow: 0 2px 0 @c-light, 0 4px 0 @c-dark;
+    }
+
+    .col
+    {
+        padding-left: 30px;
+    }
+
+    ul.unstyled
+    {
+        margin-left: 10px;
+
+        a
+        {
+            color: @c-light;
+            text-shadow: 0 1px 1px fade(@c-lightred, 80%);
+
+            &:hover
+            {
+                color: @c-orange;
+                text-shadow: 0 1px 1px fade(@c-dark, 80%);
+            }
+        }
+    }
+
+    .cntr
+    {
+        text-align: center;
+    }
+
+    .safe
+    {
+        color: @c-light;
+    }
+
+    .pmnt
+    {
+        .clearfix();
+
+        ul
+        {
+            width: 120px;
+            margin: 0px auto;
+        }
+
+        li
+        {
+            margin: 0px 4px;
+            float: left;
+            width: 32px;
+            height: 32px;
+            list-style: none;
+        }
+
+        .visa
+        {
+            background: url(/assets/images/payment/visa_32.png);
+        }
+        /*.vael {
+            background: url(../../images/payment/visa-electron.png);
+        }*/
+        .mstr
+        {
+            background: url(/assets/images/payment/mastercard_32.png);
+        }
+        /*.msto {
+            background: url(../../images/payment/maestro.png);
+        }*/
+        .pypl
+        {
+            background: url(/assets/images/payment/paypal_32.png);
+        }
+    }
+
+    .social
+    {
+        list-style: none;
+        padding: 0;
+        margin: 3px 10px 0 0;
+        float: right;
+
+        & > li
+        {
+            float: left;
+
+            & > a
+            {
+                text-indent: -9999px;
+                display: block;
+                width: 64px;
+                height: 64px;
+                overflow: hidden;
+                line-height: 64px;
+                text-decoration: none;
+                padding: 0;
+                background: url(/assets/images/socials.png);
+
+                &:hover,
+                &:focus,
+                &:active
+                {
+                    zoom: 1;
+                    filter: alpha(opacity=80);
+                    opacity: 0.8;
+                }
+            }
+
+            &.facebook > a
+            {
+                background-position: 0px;
+            }
+
+            &.twitter > a
+            {
+                background-position: -64px;
+            }
+            &.google > a
+            {
+                background-position: -128px;
+            }
+        }
+    }
+    .follow{
+        float: left;
+        list-style: none;
+        margin: 5px 0 0 0;
+        li{
+             line-height: 25px;
+          }
+    }
+    .rght
+    {
+    }
+
+    .vat
+    {
+    }
+}

@@ -1,0 +1,177 @@
+.deals
+{
+    .carousel-control
+    {
+		&.left{
+			margin-left: -15px;
+		}
+		&.right{
+			margin-right: -15px;
+		}
+    }
+    .deal_title
+    {
+        left: -10px;
+        position: absolute;
+        right: -10px;
+        top: 0;
+
+        h4
+        {
+            color: @c-light;
+            font-size: 24px;
+			line-height: 24px;
+            margin: 10px auto 0;
+            width: 100%;
+            span
+            {
+                border-color: @c-darkred;
+                border-style: dashed;
+                border-width: 2px 0;
+                display: block;
+				margin: 0 10px;
+                padding: 5px;
+            }
+        }
+    }
+
+    .deal_text
+    {
+		bottom: 0;
+		left: 0;
+		position: absolute;
+		right:0;
+        top: 0px;
+        p
+        {
+			background: fade(@c-light, 80%);
+            display: none;
+			font-size: 16px;
+			font-weight: bold;
+            height: 100%;
+            margin: 0 auto;
+			text-align: center;
+			/*width: 200px;*/
+
+            span
+            {
+                display: block;
+                padding: 60px 5px 5px;
+            }
+        }
+    }
+
+    .deal_info
+    {
+        .transition();
+        
+		bottom: 0;
+		left: 0;
+		/*
+			height: 0;
+			min-height: 0;
+        max-height: 1px;*/
+        overflow: hidden;
+		position: absolute;
+		right: 0;
+        text-align: left;
+		h3{
+			opacity: 0.8;
+			filter: alpha(opacity=80);
+			text-align: center;
+			color: @c-darkred;
+			text-shadow: 0 0 1px @c-light;
+		}
+        p
+        {
+            background: fade(@c-red, 80%);
+			.border-radius-bottom();
+			.border-radius-top(5px);
+			display: none;
+            margin: 0 auto;
+            padding: 5px;
+           
+            a
+            {
+                color: @c-light;
+                font-weight: bold;
+            }
+        }
+    }
+
+    /*.dish_list li
+    {
+        .dish
+        {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+    }*/
+
+    .dish_info
+    {
+		padding: 0 10px;
+        &:hover
+        {
+            p
+            {
+                display: block;
+            }
+			h3 {
+				display: none;
+			}
+
+            .deal_info
+            {
+                /*height: auto;
+                min-height: 1px;
+                max-height: 100px;*/
+                p
+                {
+                    a
+                    {
+                        color: @c-light;
+                    }
+                }
+            }
+        }
+    }
+}
+#deals .dish_list li
+{
+    &:nth-child(4n+1)
+    {
+        .dish
+        {
+            margin-left: 20px;
+            margin-right: 0;
+        }
+    }
+
+	&:nth-child(4n+2)
+    {
+        .dish
+        {
+            margin-left: 13px;
+            margin-right: 7px;
+        }
+    }
+
+	&:nth-child(4n+3)
+    {
+        .dish
+        {
+            margin-left: 7px;
+            margin-right: 13px;
+        }
+    }
+
+    &:nth-child(4n)
+    {
+        .dish
+        {
+            margin-left: 0;
+            margin-right: 20px;
+        }
+    }
+}

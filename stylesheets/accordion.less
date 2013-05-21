@@ -1,0 +1,142 @@
+.accordion
+{
+    .boxed();
+    .border-radius(0);
+    border: 0px solid transparent;
+    .box-shadow(0 0 0);
+
+    & > label
+    {
+        margin-bottom: 0;
+    }
+
+    & > input
+    {
+        display: none;
+    }
+
+    & > section
+    {
+        .transition();
+        height: 0;
+        min-height: 0;
+        max-height: 1px;
+        overflow: hidden;
+        padding: 0;
+    }
+
+    input:checked ~ section
+    {
+        height: auto;
+        min-height: 40px;
+        max-height: 1000px;
+    }
+
+    & > label
+    {
+        margin-bottom: 0;
+
+        h3
+        {
+            i
+            {
+                margin-top: 10px;
+                margin-right: 15px;
+            }
+        }
+    }
+}
+
+.horizontal
+{
+    display: block;
+    overflow: hidden;
+    float: left;
+    margin: 0;
+    padding: 0;
+    .clearfix();
+
+    & > input
+    {
+        float: left;
+        width: 0;
+        height: 0;
+        margin: 0;
+        visibility: hidden;
+        display: none;
+    }
+
+    & > section
+    {
+        .transition();
+        width: 0;
+        min-width: 0;
+        max-width: 1px;
+        overflow: hidden;
+        padding: 0;
+        float: left;
+
+        & > *
+        {
+            display: none;
+        }
+    }
+
+    input:checked ~ section
+    {
+        width: 740px;
+        min-width: 45px;
+        max-width: 740px;
+
+        & > *
+        {
+            display: block;
+        }
+    }
+
+    & > h3
+    {
+        cursor: pointer;
+        display: block;
+        float: left;
+        margin: 10px;
+        word-wrap: break-word;
+        text-transform: uppercase;
+        width: 22px;
+        height: 485px;
+
+        label
+        {
+            cursor: pointer;
+            font-size: 1em;
+            line-height: 30px;
+            width: 0.1em;
+            color: @c-yellow;
+            text-shadow: 0 1px 1px fade(@c-darkred, 80%);
+        }
+        /* CSS3 Transform Rotate & Translate */
+        //white-space:nowrap;
+        //-moz-transform: rotate(90.0deg) translate(-40px,0px);  /* FF3.5+ */
+        /* FF3.5+ */
+        /* FF3.5+ */
+        //-moz-transform-origin: 0 100%;
+        //-o-transform: rotate(90.0deg) translate(-40px,0px);  /* Opera 10.5 */
+        /* Opera 10.5 */
+        /* Opera 10.5 */
+        //-o-transform-origin: 0 100%;
+        //-webkit-transform: rotate(90.0deg) translate(-40px,0px);  /* Saf3.1+, Chrome */
+        /* Saf3.1+, Chrome */
+        /* Saf3.1+, Chrome */
+        //-webkit-transform-origin: 0 100%;
+        //transform: rotate(90.0deg) translate(-40px,0px);  /* Saf3.1+, Chrome */
+        /* Saf3.1+, Chrome */
+        /* Saf3.1+, Chrome */
+        //transform-origin: 0 100%;
+        //filter: progid:DXImageTransform.Microsoft.BasicImage(rotation=1.0);  /* IE6,IE7 */
+        /* IE6,IE7 */
+        /* IE6,IE7 */
+        //-ms-filter: "progid:DXImageTransform.Microsoft.BasicImage(rotation=1.0)"; /* IE8 */
+        /* IE8 */
+        /* IE8 */
+    }
+}

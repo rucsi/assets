@@ -1,0 +1,84 @@
+.static {
+	background: #fff;
+	.border-radius(10px);
+	border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+	box-shadow: 0 5px 10px 1px #7B7B7B;
+	color: @c-darkgrey;
+	padding: 20px;
+	margin-bottom: 15px;
+
+	&.affix, &.affix-bottom {
+		margin-left: 0;
+		padding-left: 0px;
+		padding-right: 0px;
+	}
+	&.affix-bottom {
+		bottom: 275px;
+		position: absolute;
+		top: auto;
+	}
+	h3 {
+		border-bottom: 1px dotted rgba(0, 0, 0, 0.2);
+		margin: -10px 0 10px;
+		padding: 5px 5px 0;
+	}
+	h3:last-child {
+		border-bottom: 0;
+		margin-bottom: 0;
+	}
+	a:not(.btn) {
+		color: @c-red;
+		&:hover{
+			color: @c-orange;
+		}
+	}
+	section {
+		padding: 15px;
+		
+		/*a[href^="mailto"], a[href^="tel"] {
+			color: @c-red;
+			&:hover{
+				color: @c-orange;
+			}
+		}*/
+
+		.list {
+			padding-left: 10px;
+			margin-bottom: 10px;
+			p {
+				margin-bottom: 0;
+			}
+		}
+	}
+	a.btn {
+		margin-right: 10px;
+		margin-bottom: 10px;
+	}
+}
+.theteam{
+    img{
+        .border-radius();
+        /*border: 5px solid @c-lightgrey;*/
+        box-shadow: 0 5px 10px 3px #7B7B7B;
+        margin-bottom: 20px;
+    }
+    h4{
+        color: @c-orange;
+        text-shadow: 3px 3px 2px @c-lightgrey;
+        font-weight:bold;
+    }
+    h5 {
+        color: @c-red;
+        text-shadow: 0 1px 1px @c-lightgrey;
+    }
+    .text {
+        margin-bottom: 30px;
+        div {
+                padding: 0 15px;
+            }
+        h5 {
+              margin: 0 5px 0 0;
+              display: inline;
+          }
+    }
+}

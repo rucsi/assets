@@ -1,0 +1,51 @@
+/*@import url(https://fonts.googleapis.com/css?family=Oleo+Script:400,700|Ubuntu:400,700|Lobster+Two:400,700);*/
+@font-face {
+  font-family: 'Oleo Script';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Oleo Script Bold'), local('OleoScript-Bold'), url(https://themes.googleusercontent.com/static/fonts/oleoscript/v1/hudNQFKFl98JdNnlo363fjqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Ubuntu'), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v4/_xyN3apAT_yRRDeqB3sPRg.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Lobster Two Bold'), local('LobsterTwo-Bold'), url(https://themes.googleusercontent.com/static/fonts/lobstertwo/v4/bmdxOflBqMqjEC0-kGsIiDqR_3kx9_hJXbbyU8S6IN0.woff) format('woff');
+}
+@font-face {
+  font-family: 'Lobster Two';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Lobster Two'), local('LobsterTwo'), url(https://themes.googleusercontent.com/static/fonts/lobstertwo/v4/Law3VVulBOoxyKPkrNsAaIbN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+@font-face {
+  font-family: 'Ubuntu';
+  font-style: normal;
+  font-weight: 700;
+  src: local('Ubuntu Bold'), local('Ubuntu-Bold'), url(https://themes.googleusercontent.com/static/fonts/ubuntu/v4/0ihfXUL2emPh0ROJezvraD8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}
+@font-face {
+  font-family: 'Oleo Script';
+  font-style: normal;
+  font-weight: 400;
+  src: local('Oleo Script'), local('OleoScript-Regular'), url(https://themes.googleusercontent.com/static/fonts/oleoscript/v1/_weQNDK6Uf40CiGFKBBUjobN6UDyHWBl620a-IRfuBk.woff) format('woff');
+}
+/*@font-face {
+  font-family: 'Merienda One';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://themes.googleusercontent.com/static/fonts/meriendaone/v4/bCA-uDdUx6nTO8SjzCLXvXZ2MAKAc2x4R1uOSeegc5U.eot);
+  src: local('Merienda One'), local('MeriendaOne-Regular'), url(https://themes.googleusercontent.com/static/fonts/meriendaone/v4/bCA-uDdUx6nTO8SjzCLXvXZ2MAKAc2x4R1uOSeegc5U.eot) format('embedded-opentype'), url(https://themes.googleusercontent.com/static/fonts/meriendaone/v4/bCA-uDdUx6nTO8SjzCLXvXhCUOGz7vYGh680lGh-uXM.woff) format('woff');
+}
+@font-face {
+  font-family: 'Simonetta';
+  font-style: normal;
+  font-weight: 400;
+  src: url(https://themes.googleusercontent.com/static/fonts/simonetta/v2/pP-YCzhElv5jnwzoOUSUyvY6323mHUZFJMgTvxaG2iE.eot);
+  src: local('Simonetta'), local('Simonetta-Regular'), url(https://themes.googleusercontent.com/static/fonts/simonetta/v2/pP-YCzhElv5jnwzoOUSUyvY6323mHUZFJMgTvxaG2iE.eot) format('embedded-opentype'), url(https://themes.googleusercontent.com/static/fonts/simonetta/v2/pP-YCzhElv5jnwzoOUSUyj8E0i7KZn-EPnyo3HZu7kw.woff) format('woff');
+}*/

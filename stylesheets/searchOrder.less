@@ -1,0 +1,84 @@
+.start-order {
+	.boxed();
+	form {
+		.clearfix();
+		/*width:250px; 
+		margin: 0px auto;*/
+		padding: 10px;
+	}
+	.control-group {
+		margin: 0 auto; 
+		float: none;
+	}
+}
+.refine-search {
+	.boxed();
+	.control-group {
+		margin: 0 auto; 
+		float: none;
+	}
+	form {
+	}
+	#tbSearch{
+	}
+	h4 {
+		padding: 0 15px;
+	}
+	.filter {
+		input {
+			margin-right: 10px;
+		}	
+	}
+	.more:after {
+		content:'\002B\2002More';
+		display: inline-block;
+	}
+	.less:after {
+		content:'\2212\2002Less';
+		display: inline-block;
+	}
+	.rating {
+		font-size: 12px;		
+	}
+	button[type="submit"] {
+		margin-right: 15px;
+	}
+}
+.editor-radio {
+    .border-radius(4px);
+	margin: 10px 0;
+    text-align: center;
+    width: 100%;
+	button {
+		span {
+			display: inline-block;
+			text-indent: -9999px;
+		}
+	}
+}
+/*form .editor-radio {
+	margin: 10px 0;
+	& > [type="radio"] {
+		display: none;
+	}
+	& > label {
+		color: @c-red;		
+		font-weight: 800;	
+		text-transform: uppercase;
+		cursor: pointer;
+		margin-left: 15px;
+
+		i {
+			visibility: hidden;
+		}
+	}		
+	& > [type="radio"]:checked {
+		& + label {
+			color: @c-darkgreen;
+			cursor: default;
+			i {
+				visibility: visible;
+			}
+		}		
+	}
+}*/

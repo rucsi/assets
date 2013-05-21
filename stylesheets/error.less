@@ -1,0 +1,190 @@
+
+body.e404 {
+    color: #0A0A0A;
+    /*background: #465364;*/
+    background: -webkit-gradient(radial, center bottom, 0, center center, 0, from(#D72427), to(#D72427));
+    background: -webkit-radial-gradient(center bottom, circle farthest-side, #D72427 0%, #D72427 50%, #801517 100%);
+    background: -moz-radial-gradient(center bottom, circle farthest-side, #D72427 0%, #D72427 50%, #801517 100%);
+    background: -ms-radial-gradient(center bottom, circle farthest-side, #D72427 0%, #D72427 50%, #801517 100%); 
+    background: -o-radial-gradient(center bottom, circle farthest-side, #D72427 0%, #D72427 50%, #801517 100%);
+    background: radial-gradient(center bottom, circle farthest-side, #D72427 0%, #D72427 50%, #801517 100%);
+    padding: 50px 0;
+    .container{
+         -moz-box-shadow: 0px 5px 10px 0px rgb(0, 0, 0, 1);
+        -webkit-box-shadow: 0px 5px 10px 0px rgb(0, 0, 0, 1);
+        box-shadow: 0px 5px 10px 0px rgb(0, 0, 0, 1);
+        -webkit-border-top-left-radius: 25px;
+        -webkit-border-top-right-radius:25px;
+        -moz-border-radius-topleft: 25px;
+        -moz-border-radius-topright: 25px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        -webkit-border-bottom-left-radius: 25px;
+        -webkit-border-bottom-right-radius: 25px;
+        -moz-border-radius-bottomleft: 25px;
+        -moz-border-radius-bottomright: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+    	overflow: hidden;
+        /*opacity: 0.8;
+        filter: alpha(opacity=80);*/
+    }
+    header, footer{
+        color: #801517;
+        text-shadow: 0 1px 1px #FBFBFB;
+    }
+    header{
+        text-align: center;
+        background: #EFEFEF;
+        -webkit-border-top-left-radius: 25px;
+        -webkit-border-top-right-radius:25px;
+        -moz-border-radius-topleft: 25px;
+        -moz-border-radius-topright: 25px;
+        border-top-left-radius: 25px;
+        border-top-right-radius: 25px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+    	overflow: hidden;
+         position: relative;
+        .i404{
+            position: absolute;
+            right: 0;
+            top: 0;
+            height: 64px;
+            width: 117px;
+            background: url(/assets/images/error/404.png);
+            margin: 15px 10px 0 0;
+          }
+    }
+    .content{
+        background: #F6F6F6;
+        /*background-repeat: no-repeat;
+        background-position: bottom right;
+        background-attachment: fixed;
+	    background-image: url(/assets/images/error/e404.jpg);
+        min-height: 350px;*/
+        .text{
+           margin: 60px 0 40px 60px;
+        }
+        .img{
+            text-align: center;
+            margin: 20px 60px 0 0;
+            width: 350px;
+            height: 350px;
+            background-image: url(/assets/images/error/e404.jpg);
+        }
+        ul{
+            list-style: none;
+            li{
+                padding: 5px 0;
+            }
+        }
+    }
+    footer{
+         background: #EFEFEF;
+        -webkit-border-bottom-left-radius: 25px;
+        -webkit-border-bottom-right-radius: 25px;
+        -moz-border-radius-bottomleft: 25px;
+        -moz-border-radius-bottomright: 25px;
+        border-bottom-left-radius: 25px;
+        border-bottom-right-radius: 25px;
+        -moz-background-clip: padding;
+        -webkit-background-clip: padding-box;
+        background-clip: padding-box;
+    	overflow: hidden;
+
+        h2{
+            background: url(/assets/images/lunchbunny-beta.png) no-repeat center center;
+            display: block;
+            float: left;
+            height: 90px;
+            margin: 0 10px;
+            text-indent: -9999px;
+            width: 198px;
+          }
+        .social
+        {
+            float: right;
+            margin: 15px 10px 0 0;
+            h5{
+                  line-height: 64px;
+                  float: left;
+                  margin: 0 15px 0 0;
+              }
+            ul{
+                float: left;
+                list-style: none;
+                padding: 0;
+
+                & > li
+                {
+                    float: left;
+
+                    & > a
+                    {
+                        text-indent: -9999px;
+                        display: block;
+                        width: 64px;
+                        height: 64px;
+                        overflow: hidden;
+                        line-height: 64px;
+                        text-decoration: none;
+                        padding: 0;
+                        background: url(/assets/images/socials.png);
+
+                        &:hover,
+                        &:focus,
+                        &:active
+                        {
+                            zoom: 1;
+                            filter: alpha(opacity=80);
+                            opacity: 0.8;
+                        }
+                    }
+
+                    &.facebook > a
+                    {
+                        background-position: 0px;
+                    }
+
+                    &.twitter > a
+                    {
+                        background-position: -64px;
+                    }
+                }
+            }
+        }
+    }
+}
+body.e500 {
+    padding: 50px;
+    color: #fff;
+	background: #73AF55;
+    background-repeat: no-repeat;
+    background-position: bottom right;
+    background-attachment: fixed;
+    background-image: url(/assets/images/error/e500.jpg);
+}
+a, a:hover, a:link, a:visited, a:active {
+    outline: medium none;
+    text-decoration: none;
+    color: #D72427;
+}
+a:hover{
+    color: #D89000;
+}
+ @media (max-width: 480px) {
+   .text{
+        margin: 20px 0 10px 0;
+   }
+    .img {
+        margin: 0;
+    }
+     /*img[data-src-desktop] {
+        content: attr(data-src-desktop, url);
+    }*/
+}

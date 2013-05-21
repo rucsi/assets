@@ -1,0 +1,127 @@
+.profile {
+    .boxed();
+
+    section {
+        padding: 20px 10px 20px 20px;
+    }
+
+    .basic {
+        .clearfix();
+        background: url(/assets/images/prof.png) repeat-x;
+        height: 200px;
+		margin: 20px 40px 0;
+		position: relative;
+        .prof-img {
+            float: left;
+            line-height: 150px;
+			width: 150px;
+            text-align: center;
+            position: relative;
+
+            img {
+                max-width: 150px;
+                max-height: 150px;
+                .border-radius(50%);
+                display: block;
+                border: 1px solid @c-light;
+                box-shadow: 0 0 2px @c-grey, 0 0 4px @c-lightgrey;
+            }
+
+            .prof-label {
+                background: url(/assets/images/prof-label.png) no-repeat left bottom;
+                position: absolute;
+                width: 100%;
+                height: 32px;
+                bottom: 0;
+                left: 0;
+            }
+        }
+		.prof-acc{
+			 position: absolute;
+			 bottom: 15px;
+			 text-align: center;
+			 width: 150px;
+			 i {
+				 margin: 0 5px;
+			 }
+		}
+        .prof-info {
+            float: left;
+
+            ul {
+                .clearfix();
+            }
+
+            li {
+                margin-right: 20px;
+                list-style: none;
+                float: left;
+                display: block;
+                text-align: center;
+
+                h4 {
+                    margin: 0;
+                }
+
+                span {
+                    font-size: 24px;
+                    font-weight: bold;
+                }
+            }
+
+            .user-info {
+                margin-left: 20px;
+                margin-top: 20px;
+				i {
+					display: inline-block;
+					text-align: center;
+					width: 14px;
+				}
+				.tgle {
+					display: none;
+				}
+				input {
+					position: absolute;
+					top: 0;
+				}
+				.controls {
+					position: relative;
+				}
+				.btn:after{
+					display: none;
+					content: '';
+				}
+                .edit, .ebtns {
+					color: @c-lightgrey;
+					position: absolute;
+					right: 15px;
+					bottom: 110px;
+					&:hover {
+						color: @c-grey;
+					}
+                }
+				.ebtns{
+					right: 0;
+					bottom: 15px;
+					.btn{
+						margin-right: 15px;
+					}
+				}
+            }
+        }
+    }
+	.favs_list {
+		/*margin-left: 0;*/
+		li {
+			display: block;
+			float: left;
+			list-style: none;
+			width: 50%;
+		}
+		.fav_item {
+			border: 1px solid @c-lightgrey;
+			.border-radius();
+			margin: 10px;
+		}
+	}
+}

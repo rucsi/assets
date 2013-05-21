@@ -1,0 +1,45 @@
+.rating {
+	unicode-bidi: bidi-override;
+	direction: rtl;
+	/*margin-left: 20px;*/
+	/*font-size: 30px;*/
+}
+.rating i {
+	font-family: FontAwesome;
+	font-weight: normal;
+	font-style: normal;
+	display: inline-block;
+	text-align: left;
+	width: 1em;
+}
+.rating i.star:before {
+	content: "\f006";
+	padding-right: 5px;
+	color: #999;
+}
+.rating.r1 i.star:nth-child(5):before, .rating.r1 i.star:nth-child(5) ~ i.star:before,
+.rating.r1\.5 i.star:nth-child(5):before, .rating.r1\.5 i.star:nth-child(5) ~ i.star:before,
+.rating.r2 i.star:nth-child(4):before, .rating.r2 i.star:nth-child(4) ~ i.star:before,
+.rating.r2\.5 i.star:nth-child(4):before, .rating.r2\.5 i.star:nth-child(4) ~ i.star:before,
+.rating.r3 i.star:nth-child(3):before, .rating.r3 i.star:nth-child(3) ~ i.star:before,
+.rating.r3\.5 i.star:nth-child(3):before, .rating.r3\.5 i.star:nth-child(3) ~ i.star:before,
+.rating.r4 i.star:nth-child(2):before, .rating.r4 i.star:nth-child(2) ~ i.star:before,
+.rating.r4\.5 i.star:nth-child(2):before, .rating.r4\.5 i.star:nth-child(2) ~ i.star:before,
+.rating.r5 i.star:nth-child(1):before, .rating.r5 i.star:nth-child(1) ~ i.star:before,
+.rating.set i.star:hover:before, .rating.set i.star:hover ~ i.star:before {
+	content: "\f005" !important;
+	color: @c-yellow;
+	text-shadow: 0 0 1px #999999;
+}
+.rating.r1\.5 i.star:nth-child(4):before, .rating.r1\.5 i.star:nth-child(4) ~ i.star:before,
+.rating.r2\.5 i.star:nth-child(3):before, .rating.r2\.5 i.star:nth-child(3) ~ i.star:before,
+.rating.r3\.5 i.star:nth-child(2):before, .rating.r3\.5 i.star:nth-child(2) ~ i.star:before,
+.rating.r4\.5 i.star:nth-child(1):before, .rating.r4\.5 i.star:nth-child(1) ~ i.star:before,
+.rating.set i.star:hover:before, .rating.set i.star:hover ~ i.star:before {
+	content: "\f089";
+	color: @c-yellow;
+	text-shadow: 0 0 1px #999999;
+}
+h3 .rating {
+	margin-left: 15px;
+}

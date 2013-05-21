@@ -1,0 +1,90 @@
+.dish_list {
+    border-bottom: 1px solid @c-lightgrey;
+    margin-bottom: 0;
+
+    &:last-child {
+        border-bottom: 0;
+    }
+
+    li {
+        list-style: none;
+
+        h4 {
+            text-overflow: ellipsis;
+            white-space: nowrap;
+        }
+
+        .dish {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        &:nth-child(3n+1) {
+            .dish {
+                margin-left: 20px;
+                margin-right: 0px;
+            }
+        }
+
+        &:nth-child(3n) {
+            .dish {
+                margin-left: 0px;
+                margin-right: 20px;
+            }
+        }
+    }
+
+    .dish {
+        background: none repeat scroll 0 0 #FFFFFF;
+        border: 1px solid #D6D6D6;
+        box-shadow: 0 1px 2px rgba(0, 0, 0, 0.31);
+        position: relative;
+        /*padding: 0 18px 15px 18px;*/
+        margin-top: 10px;
+        margin-bottom: 10px;
+        height: 220px;
+        .border-radius();
+        .clearfix();
+        overflow: hidden;
+
+        & > a {
+            color: @c-dark;
+        }
+
+        .dish_info {
+            height: 100%;
+            overflow: hidden;
+            position: relative;
+        }
+
+        .dish-img {
+            text-align: center;
+            padding: 10px 0;
+            height: 200px;
+            line-height: 200px;
+
+            img {
+                /*max-width: 200px;
+                max-height: 200px;*/
+                max-height: 100%;
+                max-width: 100%;
+            }
+        }
+
+        &.feat {
+            -moz-box-shadow: 0 1px 10px 7px fade(@c-orange, 75%), 0 0 5px 5px fade(@c-lightgrey, 25%) inset;
+            -webkit-box-shadow: 0 1px 10px 7px fade(@c-orange, 75%), 0 0 5px 5px fade(@c-lightgrey, 25%) inset;
+            box-shadow: 0 1px 10px 7px fade(@c-orange, 75%), 0 0 5px 5px fade(@c-lightgrey, 25%) inset;
+        }
+
+        .featimg {
+            background: url(/assets/images/featured.png);
+            display: block;
+            height: 91px;
+			left: -5px;
+            position: absolute;
+            top: 0;
+            width: 92px;
+        }
+    }
+}

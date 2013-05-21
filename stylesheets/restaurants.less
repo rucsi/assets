@@ -1,0 +1,97 @@
+.tab() {
+	position: relative;
+	& > [type="radio"] {
+		display: none;
+	}
+	& > label {
+		cursor: pointer;
+		float: left;
+	}
+	& > div {
+		margin-top: 28px;
+		background: white;
+		padding: 20px;
+		border: 1px solid #CCC;
+		display: none;
+		& > * {
+			opacity: 0;
+			.transition();
+			.transform(translateX(-100%));
+		}								
+	}
+	& > [type="radio"]:checked {
+		& + label {
+			font-weight: bold;
+			cursor: default;
+			& + div {
+				z-index: 1;
+				display: block;
+				& > * {
+					opacity: 1;
+					.transform(translateX(0));
+				}
+			}
+		}
+	}
+}
+#restaurants {
+	.boxed();
+}
+.review {
+	margin-bottom: 10px;
+	.meta {
+		color: @c-lightgrey;
+	}
+}
+.imagedisp {
+    margin: 20px 0 20px 20px;
+     .thumbnail span{
+            display: block;
+            text-align: center;
+        }
+    .dispcar{
+        height: 300px;
+        .thumbnail span{
+            height: 55px;
+            overflow: hidden;
+        }
+    }
+    .carousel-inner{
+        height: 100%;
+     }
+    .carousel-control{
+        top: auto;
+        bottom: -20px;
+    }
+    .displ {
+        position: relative;
+
+        img{
+            height: 300px;
+            line-height: 300px;
+        }
+    }
+    .displ-sh{
+        position: absolute;
+        right: 5px;
+        top: 5px;
+    }
+}
+.cntct {
+	margin: 20px 20px 0 0;
+}
+.scli{
+    text-align: center;
+    margin-top: 5px;
+    a{
+         margin: 0px 5px;
+     }
+}
+.carousel-control {
+    background: fade(@c-red, 75%);
+    border-color: @c-light;
+    color: @c-light;
+}
+.carousel-caption{
+    background: fade(@c-red, 75%);
+}

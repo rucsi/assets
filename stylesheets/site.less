@@ -1,0 +1,254 @@
+/* bootstrap overwrite */
+[class^="icon-"], [class*=" icon-"] {
+    background: transparent;
+    //line-height: inherit;
+}
+/*.navbar-inner
+{
+	filter: progid:DXImageTransform.Microsoft.gradient(enabled=false) !important;
+}*/
+.icon-white, .nav > .active > a > [class^="icon-"], .nav > .active > a > [class*=" icon-"], .dropdown-menu > li > a:hover > [class^="icon-"], .dropdown-menu > li > a:hover > [class*=" icon-"], .dropdown-menu > .active > a > [class^="icon-"], .dropdown-menu > .active > a > [class*=" icon-"] {
+    background-image: none;
+}
+/*.container, .navbar-fixed-top .container, .navbar-fixed-bottom .container {
+	max-width: 950px;
+}*/
+.ph-fix {
+    color: #aaa !important;
+}
+
+html, body {
+    min-height: 100%;
+    height: 100%;
+}
+
+body, input, button, select, textarea {
+    font-family: 'Ubuntu', /*"Helvetica Neue Reg", "Anja Eliane",*/ sans-serif;
+}
+
+h1, h2, h3 {
+    font-family: 'Oleo Script', fantasy;
+}
+
+h4, h5, h6, legend {
+    font-family: 'Lobster Two', cursive;
+}
+
+body {
+    margin: 0;
+    position: relative;
+    /*background: url(../img/bg-food.jpg) no-repeat center center fixed;*/
+    /*background-image: none;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;*/
+    /*filter:progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-food.jpg', sizingMethod='scale');
+	-ms-filter: "progid:DXImageTransform.Microsoft.AlphaImageLoader(src='../img/bg-food.jpg', sizingMethod='scale')";*/
+    /*-o-background-size: 100% 100%, auto;
+	-moz-background-size: 100% 100%, auto;
+	-webkit-background-size: 100% 100%, auto;
+	background-size: 100% 100%, auto;*/
+    /*.transition(background-image 1s ease-in-out);
+	animation-name: cf3FadeInOut;
+	animation-timing-function: ease-in-out;
+	animation-iteration-count: infinite;
+	animation-duration: 10s;
+	animation-direction: alternate;*/
+}
+
+.bg {
+    bottom: 0;
+    left: 0;
+    position: fixed;
+    right: 0;
+    top: 0;
+    z-index: -1;
+
+    img {
+        height: 100%;
+        left: 0;
+        position: absolute;
+        top: 0;
+        width: 100%;
+        z-index: -1;
+    }
+}
+/*.site {
+    .transition();
+    bottom: 0;
+    height: auto;
+    left: 0;
+    position: absolute;
+    right: 0;
+    top: 0;
+}*/
+/*.site.help {
+        .transform(scale(0.8));
+    }*/
+.wrapper {
+    min-height: 100%;
+    height: auto !important;
+    height: 100%;
+    /*margin-bottom: -275px;*/
+    /*position: relative;*/
+    .pagecontent {
+        /*margin-top: 100px;*/
+        /*margin-top: 151px;*/
+        /*margin-bottom: 275px;*/
+        padding-top: 100px;
+        /*padding-bottom: 275px;*/
+    }
+}
+
+.push {
+    height: 280px;
+}
+
+.main .stqeyl {
+    h2 {
+        color: @c-red;
+        font-size: 55px;
+        line-height: 55px;
+        font-family: 'Lobster Two', cursive;
+        font-style: italic;
+    }
+
+    h3 {
+        color: @c-light;
+        font-family: 'Ubuntu', sans-serif;
+        font-weight: bold;
+
+        &.hiw {
+            .clearfix();
+            line-height: 64px;
+        }
+    }
+
+    .idximg {
+        background-image: url(/assets/images/lbidximg.png);
+
+        &.eyl {
+            float: right;
+            height: 205px;
+            width: 250px;
+        }
+
+        &.eyp, &.cam, &.pyo {
+            float: left;
+            height: 64px;
+            width: 64px;
+        }
+
+        &.eyp {
+            background-position: 0 -205px;
+        }
+
+        &.cam {
+            background-position: -64px -205px;
+        }
+
+        &.pyo {
+            background-position: -128px -205px;
+        }
+    }
+}
+.loading {
+    font-size: xx-large;
+    text-align: center;
+
+    .icon-spinner {
+        margin: 10px;
+    }
+}
+#pleasewait {
+    .border-radius();
+
+    &.animated {
+        -webkit-animation-duration: 1s;
+        -moz-animation-duration: 1s;
+        -o-animation-duration: 1s;
+        animation-duration: 1s;
+        -webkit-animation-fill-mode: both;
+        -moz-animation-fill-mode: both;
+        -o-animation-fill-mode: both;
+        animation-fill-mode: both;
+    }
+
+    &.shake {
+        -webkit-animation-name: shake;
+        -moz-animation-name: shake;
+        -o-animation-name: shake;
+        animation-name: shake;
+    }
+}
+/*.page {
+	border: 2px solid @c-red;
+	background: #fff;
+	.border-radius();
+	.box-shadow(~"0 0 0 4px" @c-light ~", 0 0 6px 6px" @c-dark);
+	& > section {
+		padding: 10px;
+	}
+}*/
+/*.sqel {
+    font-family: 'Oleo Script', fantasy;
+    font-size: 48px;
+    line-height: 60px;
+    padding: 0 10px;
+    color: @c-lightgrey;
+    text-shadow: 0px 3px 0px @c-light, 
+				 0px 14px 10px rgba(0,0,0,0.15), 
+				 0px 24px 2px rgba(0,0,0,0.1), 
+				 0px 34px 30px rgba(0,0,0,0.1);
+
+    p {
+        color: @c-lightred;
+        text-shadow: 0px 3px 0px @c-light,
+					 0px 14px 10px rgba(0,0,0,0.15), 
+					 0px 24px 2px rgba(0,0,0,0.1), 
+					 0px 34px 30px rgba(0,0,0,0.1);
+		
+    }
+}*/
+/* Pure CSS folded-corner effect */
+/*.note {
+    position: relative;
+    width: 30%;
+    padding: 1em 1.5em;
+    margin: 2em auto;
+    color: #fff;
+    background: #97C02F;
+    overflow: hidden;
+}
+
+    .note:before {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: 0;
+        border-width: 0 16px 16px 0;
+        border-style: solid;
+        border-color: #fff #fff #658E15 #658E15;
+        background: #658E15;
+        -webkit-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+        -moz-box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+        box-shadow: 0 1px 1px rgba(0,0,0,0.3), -1px 1px 1px rgba(0,0,0,0.2);
+        display: block;
+        width: 0; /* Firefox 3.0 damage limitation * /
+    }
+
+    .note.rounded {
+        -webkit-border-radius: 5px 0 5px 5px;
+        -moz-border-radius: 5px 0 5px 5px;
+        border-radius: 5px 0 5px 5px;
+    }
+
+        .note.rounded:before {
+            border-width: 8px;
+            border-color: #fff #fff transparent transparent;
+            -webkit-border-bottom-left-radius: 5px;
+            -moz-border-radius: 0 0 0 5px;
+            border-radius: 0 0 0 5px;
+        }
+*/
